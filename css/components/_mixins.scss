@@ -1,0 +1,32 @@
+@mixin btn-menu-style {
+    background-color:$color-grey-background;
+    box-shadow:$shadow-border-1;
+    border-radius:$border-radius-light;
+    width: 322.49px;
+    height: 72.38px;
+    border: 0px;}
+    
+@mixin btn-pink {
+    background:$color-purple-gradient ;
+    width:218px;
+    height:50px;
+    border-radius: $border-radius-medium;
+    border: 0px;
+    color:$color-white ;
+}
+
+@mixin resto {
+    width: 335px;
+    height: 251px;
+    border-radius: $border-radius-light;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $shadow-border-1;
+}
+
+@mixin flex-column-aligned {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,132 @@
+/*couleurs*/
+/*polices*/
+/*ombres*/
+/*arrondis bordures*/
+
+/*couleurs*/
+/*polices*/
+/*ombres*/
+/*arrondis bordures*/
+body {
+  font-family: "Roboto", sans-serif;
+  background: #F7F7F7;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+body p {
+  font-weight: 300;
+}
+
+.img__quality {
+  object-fit: cover;
+}
+
+.title__principal__container {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.title__principal {
+  font-family: "Shrikhand", cursive;
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+
+.localisation__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background: #EAEAEA;
+}
+
+.header__down__container {
+  padding: 0 20% 57px 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn__g__1 {
+  margin-top: 27px;
+}
+
+h3, p, strong {
+  margin: 0;
+}
+
+.title__fonctionnement {
+  margin: 48px 0px 26px -146px;
+}
+
+.section__fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 48px 0 68px 0;
+}
+.section__fonctionnement .container__btn__menu {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.style_btn {
+  background-color: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  width: 322.49px;
+  height: 72.38px;
+  border: 0px;
+}
+
+footer + h3 {
+  font-family: "Shrikhand", cursive;
+}
+
+.btn-gradient {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0px;
+  color: #FFFFFF;
+}
+
+.section__restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article__restaurants__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.title__restaurants {
+  margin: 48px 0px 26px -202px;
+}
+
+.article__restaurants {
+  width: 335px;
+  height: 251px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.picture__food__card {
+  width: 100%;
+  height: 70%;
+}
+
+/*# sourceMappingURL=style.css.map */
