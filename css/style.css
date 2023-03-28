@@ -10,7 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background: #F7F7F7;
-  padding: 0px 20px;
+  padding: 0px;
   box-sizing: border-box;
 }
 body p {
@@ -26,6 +26,8 @@ body p {
   justify-content: center;
   background-color: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
 }
 
 .title__principal {
@@ -43,8 +45,12 @@ body p {
   background: #EAEAEA;
 }
 
+.fa-location-dot::before {
+  margin-left: -28px;
+}
+
 .header__down__container {
-  padding: 0 20% 57px 20%;
+  padding: 0px 5% 57px 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,8 +91,18 @@ h3, p, strong {
   border: 0px;
 }
 
-footer + h3 {
-  font-family: "Shrikhand", cursive;
+.text__btn__menu {
+  margin-left: 25px;
+}
+
+.only__number {
+  color: #FFFFFF;
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -16px;
+  margin-top: -4px;
+  padding: 4px 8px;
 }
 
 .btn-gradient {
@@ -102,6 +118,7 @@ footer + h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 64px;
 }
 
 .article__restaurants__container {
@@ -124,9 +141,66 @@ footer + h3 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+.nouveau {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 8px 1px 4px 10px;
+  position: relative;
+  z-index: 2;
+  height: 22px;
+  width: 70px;
+  border-radius: 2px;
+  left: 71%;
+  bottom: 65%;
+  color: #008766;
+  background-color: #99E2D0;
+}
+
+.with__nouveau {
+  margin-top: -31px;
+}
+
+.card__subtitle__and__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-regular.fa-heart {
+  margin: 23px 33px 0 0;
+  font-size: 1.5em;
+}
+
+.card__subtitle {
+  margin: 16px 0px 12px 12.8px;
+}
+
 .picture__food__card {
   width: 100%;
   height: 70%;
+  border-radius: 15px 15px 0 0;
+}
+
+footer {
+  color: #FFFFFF;
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0px 33px 25px;
+}
+
+.footer__title {
+  font-family: "Shrikhand", cursive;
+}
+
+.footer__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 7px;
+}
+
+i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
