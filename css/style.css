@@ -112,6 +112,7 @@ h3, p, strong {
   border-radius: 25px;
   border: 0px;
   color: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .section__restaurants {
@@ -139,6 +140,8 @@ h3, p, strong {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: black;
 }
 
 .nouveau {
@@ -159,12 +162,12 @@ h3, p, strong {
   margin-top: -31px;
 }
 
-.card__subtitle__and__logo {
+.space-between {
   display: flex;
   justify-content: space-between;
 }
 
-.fa-regular.fa-heart {
+.heart__pos {
   margin: 23px 33px 0 0;
   font-size: 1.5em;
 }
@@ -177,6 +180,11 @@ h3, p, strong {
   width: 100%;
   height: 70%;
   border-radius: 15px 15px 0 0;
+}
+
+.picture__food__card-bis {
+  width: 100%;
+  height: 275px;
 }
 
 footer {
@@ -199,8 +207,86 @@ footer {
   gap: 7px;
 }
 
-i {
+.icon__footer {
   margin-right: 10px;
+}
+
+.contact {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.title__restaurant-bis {
+  display: flex;
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  justify-content: space-between;
+  width: 94%;
+}
+
+.heart__pos-bis {
+  font-size: 1em;
+  margin: 5px 16px 0 0;
+}
+
+.container__menu-bis {
+  position: relative;
+  margin-top: -60px;
+  background-color: #F6F6F6;
+  z-index: 2;
+  border-radius: 40px 40px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-bis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0 0 40px 0;
+}
+
+.btn__style-bis {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  width: 349px;
+  height: 68px;
+  border: 0px;
+  padding: 12px 5px 12px 10px;
+}
+
+.position__img-bis {
+  z-index: -1;
+}
+
+.style__green__trait-bis {
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-right: 88%;
+  font-weight: 300;
+  padding-bottom: 4px;
+}
+
+.price-bis {
+  margin-top: 16px;
+  margin-right: 12px;
+}
+
+.name__flat-bis {
+  margin-right: 100%;
+}
+
+.text__card__exept__price-bis {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.pos__command__btn-bis {
+  margin-top: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

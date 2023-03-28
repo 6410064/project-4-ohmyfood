@@ -10,6 +10,7 @@ $color-grey-btn:#7E7E7E;
 $color-grey-section-localisation:#EAEAEA;
 $color-grey-footer:	rgb(53,53,53);
 $color-grey-background: #F7F7F7;
+$color-grey-bis:#F6F6F6;
 $color-white: #FFFFFF;
 $color-green-light:#99E2D0;
 $color-green-dark: #008766;
@@ -33,6 +34,7 @@ body {
   p {
     font-weight: 300;
   }
+
 }
 .img__quality {
   object-fit: cover;}
@@ -126,6 +128,8 @@ body {
           
           .article__restaurants {
             @include resto;
+            text-decoration: none;
+            color: black;
           }
           .nouveau{
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -145,13 +149,12 @@ body {
             margin-top: -31px;
           }
         
-          .card__subtitle__and__logo {
+          .space-between {
             display: flex;
             justify-content: space-between;
           }
-          .fa-regular.fa-heart
+          .heart__pos
           {margin: 23px 33px 0 0;
-            
             font-size: 1.5em;
           }
           
@@ -165,13 +168,18 @@ body {
             height: 70%;
             border-radius: 15px 15px 0 0;
           }
+          .picture__food__card-bis{
+            width: 100%;
+            height: 275px;
+          }
           
           footer {
             color: $color-white;
             background-color: $color-grey-footer;
             display: flex;
             flex-direction: column;
-            padding: 22px 0px 33px 25px;}
+            padding: 22px 0px 33px 25px;
+            }
           .footer__title {
             font-family: $police-title;}
           .footer__list{
@@ -180,9 +188,69 @@ body {
             flex-direction: column;
             padding: 0;
             gap: 7px;}
-            i {
-            margin-right: 10px;
+            .icon__footer {
+            margin-right: 10px;}
+            
+            .contact {
+            color: $color-white;
+            text-decoration: none;}
+            
+            .title__restaurant-bis { 
+              display: flex;
+              font-family: "Shrikhand", cursive;
+              font-size: 28px;
+              justify-content: space-between;
+              width: 94%
             }
+            .heart__pos-bis
+            {
+            font-size: 1em;
+            margin: 5px 16px 0 0;
+            }
+            
+            .container__menu-bis {
+              position: relative;
+              margin-top: -60px;
+              background-color: $color-grey-bis;
+              z-index: 2;
+              border-radius:40px 40px 0px 0px;;
+            @include flex-column-aligned;}
+            
+            .card-bis {
+            @include flex-column-aligned;
+            gap: 12px;
+            padding: 0 0 40px 0;}
+            
+            .btn__style-bis {
+            @include btn-menu-bis;
+            }
+            
+            .position__img-bis {
+            z-index: -1;}
+            
+            .style__green__trait-bis {
+            @include green-trait;}
+            
+            .price-bis {
+              margin-top: 16px;
+              margin-right: 12px;}
+            
+            .name__flat-bis {
+            margin-right: 100%;
+            
+            }
+            .text__card__exept__price-bis {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            }
+            .pos__command__btn-bis
+            {margin-top: 28px;
+            }
+            
+            
+            
+            
             
             
             
