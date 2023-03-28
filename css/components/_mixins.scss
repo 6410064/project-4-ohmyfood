@@ -6,48 +6,51 @@
     height: 72.38px;
     border: 0px;}
     
-@mixin btn-pink {
-    background:$color-purple-gradient ;
-    width:218px;
-    height:50px;
-    border-radius: $border-radius-medium;
-    border: 0px;
-    color:$color-white ;
-    box-shadow:$shadow-border-2;
-}
-
-@mixin resto {
-    width: 335px;
-    height: 251px;
-    border-radius: $border-radius-light;
-    display: flex;
-    flex-direction: column;
-    box-shadow: $shadow-border-1;
-}
-
-@mixin flex-column-aligned {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@mixin btn-menu-bis { 
-    background-color:$color-white;
-    box-shadow:$shadow-border-1;
-    border-radius:$border-radius-light;
-    width: 349px;
-    height: 68px;
-    border: 0px;
-    padding: 12px 5px 12px 10px;
-}
-
-
-@mixin green-trait {
-    border-bottom: 3px solid #99E2D0;
-    width: 40px;
-    margin-right: 88%;
-    font-weight: 300;
-    padding-bottom: 4px;
+    @mixin btn-pink {
+        background: $color-purple-gradient;
+        width: 218px;
+        height: 50px;
+        border-radius: $border-radius-medium;
+        border: 0px;
+        color: $color-white;
+        box-shadow: $shadow-border-2;
+        &:hover {
+            opacity: 0.8; 
+       
+    }} 
     
-}
+    @mixin resto {
+        width: 335px;
+        height: 251px;
+        border-radius: $border-radius-light;
+        display: flex;
+        flex-direction: column;
+        box-shadow: $shadow-border-1;
+    }
+    
+    @mixin flex-column-aligned {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @mixin btn-menu-bis { 
+        background-color:$color-white;
+        box-shadow:$shadow-border-1;
+        border-radius:$border-radius-light;
+        width: 349px;
+        height: 68px;
+        border: 0px;
+        padding: 12px 5px 12px 10px;
+    }
+    
+    
+    @mixin green-trait {
+        border-bottom: 3px solid #99E2D0;
+        width: 40px;
+        margin-right: 88%;
+        font-weight: 300;
+        padding-bottom: 4px;
+        
+    }
