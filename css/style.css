@@ -67,6 +67,16 @@ h3, p, strong {
 .title__fonctionnement {
   margin: 48px 0px 26px -146px;
 }
+@media screen and (min-width: 700px) {
+  .title__fonctionnement {
+    margin: 48px 0px 26px -488px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .title__fonctionnement {
+    margin: 48px 0px 26px -888px;
+  }
+}
 
 .section__fonctionnement {
   display: flex;
@@ -81,6 +91,11 @@ h3, p, strong {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 700px) {
+  .section__fonctionnement .container__btn__menu {
+    flex-direction: row;
+  }
+}
 
 .style_btn {
   background-color: #F7F7F7;
@@ -89,6 +104,17 @@ h3, p, strong {
   width: 322.49px;
   height: 72.38px;
   border: 0px;
+}
+@media screen and (min-width: 700px) {
+  .style_btn {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .style_btn {
+    width: 322.49px;
+    margin: 12px;
+  }
 }
 
 .text__btn__menu {
@@ -116,6 +142,8 @@ h3, p, strong {
 }
 .btn-gradient:hover {
   opacity: 0.8;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: opacity 1s ease;
 }
 
 .section__restaurants {
@@ -197,9 +225,21 @@ footer {
   flex-direction: column;
   padding: 22px 0px 33px 25px;
 }
+@media screen and (min-width: 700px) {
+  footer {
+    gap: 10%;
+    flex-direction: row-reverse;
+  }
+}
 
 .footer__title {
   font-family: "Shrikhand", cursive;
+}
+@media screen and (min-width: 700px) {
+  .footer__title {
+    margin-top: 12px;
+    margin-right: 5%;
+  }
 }
 
 .footer__list {
@@ -208,6 +248,17 @@ footer {
   flex-direction: column;
   padding: 0;
   gap: 7px;
+}
+@media screen and (min-width: 700px) {
+  .footer__list {
+    gap: 20px;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 990px) {
+  .footer__list {
+    gap: 40px;
+  }
 }
 
 .icon__footer {
@@ -296,6 +347,30 @@ footer {
 
 .pos__command__btn-bis {
   margin-top: 28px;
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.entrees-bis, .plats-bis, .desserts-bis {
+  opacity: 0;
+}
+
+.entrees-bis {
+  animation: appearance 0.5s ease 1s forwards;
+}
+
+.plats-bis {
+  animation: appearance 0.5s ease 2s forwards;
+}
+
+.desserts-bis {
+  animation: appearance 0.5s ease 3s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
