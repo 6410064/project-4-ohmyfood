@@ -10,56 +10,11 @@
     opacity: 1;
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-@keyframes background-loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 
-.background__loader {
-  z-index: 99;
-  position: absolute;
-  background-color: #F7F7F7;
-  width: 100vw;
-  height: 100vw;
-  animation: background-loader 3s ease forwards;
-}
-
-.loader {
-  border: 10px solid #F7F7F7;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #99E2D0;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation: spin 3s ease-in-out forwards;
-  -webkit-animation: spin ease-in-out 3s forwards;
-  z-index: 100;
-}
-
+/*couleurs*/
+/*polices*/
+/*ombres*/
+/*arrondis bordures*/
 body {
   font-family: "Roboto", sans-serif;
   background: #F7F7F7;
@@ -195,7 +150,7 @@ h3, p, strong {
 }
 
 .btn-gradient {
-  background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -222,22 +177,9 @@ h3, p, strong {
   align-items: center;
   gap: 15px;
 }
-@media screen and (min-width: 700px) {
-  .article__restaurants__container {
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    max-width: 750px;
-  }
-}
 
 .title__restaurants {
   margin: 48px 0px 26px -202px;
-}
-@media screen and (min-width: 700px) {
-  .title__restaurants {
-    margin: 48px auto 26px auto;
-  }
 }
 
 .article__restaurants {
@@ -272,26 +214,11 @@ h3, p, strong {
 .heart__pos {
   margin: 23px 33px 0 0;
   font-size: 1.5em;
-  position: absolute;
-  opacity: 1;
 }
-.heart__pos :hover {
-  visibility: hidden;
-  opacity: 0;
-}
-
 .fa-solid.fa-heart.heart-gradient {
-  z-index: -1;
-  background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   margin: 23px 33px 0 0;
   font-size: 1.5em;
-  opacity: 0;
-}
-.fa-solid.fa-heart.heart-gradient:hover {
-  opacity: 1;
 }
 
 .space-between {
@@ -497,4 +424,4 @@ footer {
   animation: appearance 0.5s ease 3s forwards;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css$.map */
