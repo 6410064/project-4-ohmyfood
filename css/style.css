@@ -424,15 +424,20 @@ footer {
   justify-content: center;
   display: flex;
   box-sizing: border-box;
-  margin-top: -18px;
+  margin-top: -19px;
   color: #FFFFFF;
-  width: 16%;
+  width: 0%;
   background-color: #99E2D0;
-  height: 100%;
+  height: 101%;
   z-index: 2;
   transition: transform 0.5s ease-in-out;
   opacity: 0;
   right: -16%;
+}
+
+.fa-circle-check {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
 }
 
 .btn__style-bis {
@@ -446,11 +451,15 @@ footer {
   transform: translateX(0%);
 }
 .btn__style-bis:hover .carre__vert {
+  width: 16%;
   transform: translateX(-100%);
   opacity: 1;
 }
 .btn__style-bis:hover .price-bis {
-  margin-right: -56%;
+  transform: translateX(-9%);
+}
+.btn__style-bis:hover .fa-circle-check {
+  transform: rotate(360deg);
 }
 
 .position__img-bis {
@@ -469,6 +478,7 @@ footer {
 .price-bis {
   margin-top: 16px;
   margin-right: -83%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .name__flat-bis {
@@ -480,6 +490,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .pos__command__btn-bis {
