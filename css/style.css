@@ -35,10 +35,12 @@
 
 .background__loader {
   z-index: 99;
-  position: absolute;
   background-color: #F7F7F7;
-  width: 100vw;
-  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   animation: background-loader 3s ease forwards;
 }
 
@@ -192,6 +194,11 @@ h3, p, strong {
   margin-left: -16px;
   margin-top: -4px;
   padding: 4px 8px;
+}
+@media screen and (min-width: 700px) {
+  .only__number {
+    margin-top: 4px;
+  }
 }
 
 .btn-gradient {
@@ -425,6 +432,7 @@ footer {
   z-index: 2;
   transition: transform 0.5s ease-in-out;
   opacity: 0;
+  right: -16%;
 }
 
 .btn__style-bis {
@@ -435,10 +443,10 @@ footer {
   height: 68px;
   border: 0px;
   transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
+  transform: translateX(0%);
 }
 .btn__style-bis:hover .carre__vert {
-  transform: translateX(514%);
+  transform: translateX(-100%);
   opacity: 1;
 }
 .btn__style-bis:hover .price-bis {
