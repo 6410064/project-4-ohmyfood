@@ -1,26 +1,5 @@
-@mixin btn-menu-style {
-    background-color:$color-grey-background;
-    box-shadow:$shadow-border-1;
-    border-radius:$border-radius-light;
-    width: 322.49px;
-    height: 72.38px;
-    border: 0px;}
-    
-    @mixin btn-pink {
-        background: $color-purple-gradient;
-        width: 218px;
-        height: 50px;
-        border-radius: $border-radius-medium;
-        border: 0px;
-        color: $color-white;
-        box-shadow: $shadow-border-2;       
-        
-        &:hover {
-        opacity: 0.8; 
-        box-shadow: $shadow-border-1;
-        transition: opacity 1s ease;      
-    }} 
-    
+
+
     @mixin resto {
         width: 335px;
         height: 251px;
@@ -36,18 +15,7 @@
         flex-direction: column;
         align-items: center;
     }
-    
-    @mixin btn-menu-bis { 
-        background-color:$color-white;
-        box-shadow:$shadow-border-1;
-        border-radius:$border-radius-light;
-        width: 349px;
-        height: 68px;
-        border: 0px;
-        
-    }
-    
-    
+
     @mixin green-trait {
         border-bottom: 3px solid #99E2D0;
         width: 40px;
