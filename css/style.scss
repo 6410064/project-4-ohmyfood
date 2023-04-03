@@ -353,21 +353,20 @@ footer {
   color: #ffffff;
   width: 0%;
   background-color: #99e2d0;
-  height: 105%;
-  z-index: -7;
+  height: 104%;
   transition: width 0.5s ease-in-out;
   opacity: 0;
-  margin-top: -17px;
+  margin-top: -16px;
 }
 
 .fa-circle-check {
   transform: rotate(0deg);
 
-  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-out;
 }
 .btn__style-bis {
   @include btn-menu-bis;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s  ease-in-out;
   transform: translateX(0%);
   @media screen and (min-width: 700px) {
     width: 634px;
@@ -406,7 +405,7 @@ footer {
   margin-right: 100%;
 }
 .text__card__exept__price-bis {
-  top: 25%;
+  top: 31%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -417,6 +416,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
+  
 }
 .pos__command__btn-bis {
   margin-top: 28px;
