@@ -156,7 +156,8 @@ strong {
   @include btn-pink;
   &:not(:hover) {
     opacity: 1;
-    transition: opacity 1s ease;}
+    transition:  0.5s ease;
+    box-shadow: $shadow-border-2}
 }
 .section__restaurants {
   @include flex-column-aligned;
@@ -219,32 +220,23 @@ strong {
 }
 
 .heart__pos {
-  margin: 23px 33px 0 0;
+  margin: 23px 33px 0 -43px;
   font-size: 1.5em;
   position: absolute;
-  opacity: 1;
+  
+  transition: all 0.5s ease ;
 
   &:hover {
-    visibility: hidden;
-    opacity: 0;
+    background: linear-gradient(#9356DC, #FF79DA);
+    color: #fff;
+    font-weight: 600;
+    transform: scale(1.1);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
   }
 }
 
-.fa-solid.fa-heart.heart-gradient {
-  z-index: -1;
-  background: $color-purple-gradient;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 23px 33px 0 0;
-  font-size: 1.5em;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  &:hover {
-    opacity: 1;
-  }
-}
 
 .space-between {
   display: flex;
@@ -387,7 +379,7 @@ footer {
       opacity: 1;
     }
     .price-bis {
-      transform: translateX(-69px);
+      transform: translateX(-59px);
     }
     .fa-circle-check {
       transform: rotate(360deg);
