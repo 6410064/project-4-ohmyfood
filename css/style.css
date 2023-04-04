@@ -467,13 +467,13 @@ footer {
   height: 101%;
   transition: width 0.5s ease-in-out;
   opacity: 0;
-  margin-top: -58.5px;
+  margin-top: -57.5px;
 }
 
 .fa-circle-check {
   transform: rotate(0deg);
   font-size: larger;
-  transition: transform 1s ease-out;
+  transition: all 1s ease-out 0.2s;
 }
 
 .btn__style-bis {
@@ -501,7 +501,6 @@ footer {
 }
 .btn__style-bis:hover .fa-circle-check {
   transform: rotate(360deg);
-  opacity: 1;
 }
 
 .position__img-bis {
