@@ -1,7 +1,7 @@
 
 
     @mixin resto {
-        width: 335px;
+        width: 90%;
         height: 251px;
         border-radius: $border-radius-light;
         display: flex;
@@ -23,6 +23,15 @@
         font-weight: 300;
         padding-bottom: 4px;
         
+    }
+
+    @mixin margin-title-h2 {
+        margin: 38px 0px 26px 5%;
+
+  @media screen and (min-width: 990px) {
+    margin-left: 13%;
+  }
+
     }
     
    
