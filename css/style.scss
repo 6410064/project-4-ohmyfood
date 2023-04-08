@@ -5,7 +5,6 @@
 /*# sourceMappingURL=style.css.mappourcompiler , copicoll ci dessous
 sass css/style.scss css/style.css*/
 
-
 .background__loader {
   z-index: 99;
   background-color: $color-grey-background;
@@ -44,7 +43,7 @@ body {
   @media screen and (min-width: 990px) {
     background-color: $color-white;
   }
-
+  
   p {
     font-weight: 300;
   }
@@ -117,7 +116,7 @@ strong {
 .style_btn {
   @include btn-menu-style;
   width: 90%;
-
+  
   @media screen and (min-width: 700px) {
     width: 30%;
   }
@@ -155,10 +154,7 @@ strong {
     box-shadow: $shadow-border-1;
   }
 }
-// .section__restaurants {
-//   @include flex-column-aligned;
-//   padding-bottom: 64px;
-// }
+
 .article__restaurants__container {
   @include flex-column-aligned;
   gap: 15px;
@@ -182,15 +178,15 @@ strong {
 
 .article__restaurants {
   @include resto;
+  position: relative;
   text-decoration: none;
   color: black;
   cursor: pointer;
   transition: all 0.4s ease;
   @media screen and (min-width: 700px) {
-    width: 45%
+    width: 45%;
   }
   @media screen and (min-width: 990px) {
-    
     width: 45%;
   }
   &:hover {
@@ -209,27 +205,19 @@ strong {
 .nouveau {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   padding: 8px 1px 4px 10px;
-  position: relative;
-  z-index: 2;
   height: 22px;
   width: 70px;
   border-radius: 2px;
-  left: 68%;
-  bottom: 65%;
   color: $color-green-dark;
   background-color: $color-green-light;
-}
-
-.with__nouveau {
-  margin-top: -31px;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
 }
 
 .heart__pos {
-  margin: 23px 33px 0 -43px;
+  margin-top: 10px;
   font-size: 1.5em;
-  position: absolute;
-  
-  font-weight: 100;
   
   &:hover {
     animation: heart-animation 0.8s;
@@ -240,14 +228,12 @@ strong {
   }
 }
 
-.space-between {
+.card__subtitle__with__heart {
   display: flex;
   justify-content: space-between;
+  padding: 15px;
 }
 
-.card__subtitle {
-  margin: 16px 0px 12px 12.8px;
-}
 .picture__food__card {
   width: 100%;
   height: 70%;
@@ -354,54 +340,61 @@ footer {
   color: #ffffff;
   width: 0%;
   background-color: #99e2d0;
-  height: 101%;
-  transition: all 0.5s ease-in-out;
-  opacity: 1;
-  margin-top: -58.5px;
+  height: 100%;
+  transition: all 0.4s ease-out;
+  transform-origin: left;
+  margin-top: -57.3px;
 }
 
 .fa-circle-check {
   opacity: 0;
   transform: rotate(0deg);
   font-size: larger;
-  transition: all 1s ease-out 0.2s;
+  transition: all 0.8s ease-out 0.1s;
+  
 }
+
+@keyframes anim-circle {
+  from { scale:1}
+  to {scale: 0}
+}
+
 .btn__style-bis {
   @include btn-menu-bis;
   transition: transform 0.5s ease-in-out;
   transform: translateX(0%);
   @media screen and (min-width: 700px) {
     width: 634px;
-
   }
   &:hover {
     .carre__vert {
       width: 59px;
+      
       transform: translateX(-100%);
-      opacity: 1;
+      
     }
     .price-bis {
       transform: translateX(-59px);
     }
+  
     .fa-circle-check {
       transform: rotate(360deg);
       opacity: 1;
-    }
-    
-     .description__flat-bis{
+    }                  
+      
+    .description__flat-bis {
       width: 80%;
-      }    
-  }
-  :not(:hover) {
-    .carre__vert {
-      width: 0%;
-      transform: translateX(0%);
-      opacity: 0;
-      transition: all 0.5s ease-in-out;
+      
+      
+      }}
+      &:not(:hover) {
+        .fa-circle-check{
+        
+        animation: anim-circle 0.8s ease;}
+      }
     }
- 
-  }
-  }
+  
+
 
 .description__flat-bis {
   text-overflow: ellipsis;
@@ -434,7 +427,6 @@ footer {
   align-items: start;
   width: 85%;
 }
-
 
 .pos__command__btn-bis {
   margin-top: 28px;
