@@ -343,7 +343,7 @@ strong {
   font-size: 1.5em;
 }
 .heart__pos:hover {
-  animation: heart-animation 0.8s;
+  animation: heart-animation reverse 0.4s infinite;
   background: linear-gradient(#9356dc, #ff79da);
   font-weight: 600;
   -webkit-background-clip: text;
@@ -480,10 +480,10 @@ footer {
   color: #ffffff;
   width: 0%;
   background-color: #99e2d0;
-  height: 100%;
+  height: 101%;
   transition: all 0.4s ease-out;
   transform-origin: left;
-  margin-top: -57.3px;
+  top: -85.75%;
 }
 
 .fa-circle-check {
