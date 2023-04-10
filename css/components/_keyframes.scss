@@ -60,3 +60,11 @@
     transform: scale(1.15);
   }
 }
+@keyframes anim-circle {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+  }
+}

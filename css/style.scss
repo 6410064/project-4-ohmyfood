@@ -5,6 +5,7 @@
 /*# sourceMappingURL=style.css.mappourcompiler , copicoll ci dessous
 sass css/style.scss css/style.css*/
 
+
 .background__loader {
   z-index: 99;
   background-color: $color-grey-background;
@@ -43,10 +44,15 @@ body {
   @media screen and (min-width: 990px) {
     background-color: $color-white;
   }
-  
-  p {
-    font-weight: 300;
-  }
+}
+p {
+  font-weight: 300;
+  margin: 0;
+}
+
+h3,
+strong {
+  margin: 0;
 }
 
 .img__quality {
@@ -80,18 +86,12 @@ body {
 }
 .header__down__container {
   padding: 0px 5% 57px 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-aligned;
 }
 .btn__g__1 {
   margin-top: 27px;
 }
-h3,
-p,
-strong {
-  margin: 0;
-}
+
 
 .title__fonctionnement {
   @include margin-title-h2;
@@ -116,7 +116,7 @@ strong {
 .style_btn {
   @include btn-menu-style;
   width: 90%;
-  
+
   @media screen and (min-width: 700px) {
     width: 30%;
   }
@@ -197,53 +197,44 @@ strong {
     box-shadow: $shadow-border-1;
     transition: 0.4s all ease;
   }
+  .picture__food__card {
+    width: 100%;
+    height: 70%;
+    border-radius: 15px 15px 0 0;
+  }
+  .nouveau {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 8px 1px 4px 10px;
+    height: 22px;
+    width: 70px;
+    border-radius: 2px;
+    color: $color-green-dark;
+    background-color: $color-green-light;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+  }
 }
+
 .title__restaurants {
   @include margin-title-h2;
-}
-
-.nouveau {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  padding: 8px 1px 4px 10px;
-  height: 22px;
-  width: 70px;
-  border-radius: 2px;
-  color: $color-green-dark;
-  background-color: $color-green-light;
-  position: absolute;
-  top: 1rem;
-  right: 0.75rem;
-}
-
-.heart__pos {
-  margin-top: 10px;
-  font-size: 1.5em;
-  
-  &:hover {
-    animation: heart-animation reverse 0.4s infinite;
-    background: linear-gradient(#9356dc, #ff79da);
-    font-weight: 600;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 }
 
 .card__subtitle__with__heart {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-}
-
-.picture__food__card {
-  width: 100%;
-  height: 70%;
-  border-radius: 15px 15px 0 0;
-}
-.picture__food__card-bis {
-  width: 100%;
-  height: 360px;
-  z-index: -1;
-  border-radius: 0;
+  .heart__pos {
+    margin-top: 10px;
+    font-size: 1.5em;
+    &:hover {
+      animation: heart-animation reverse 0.4s infinite;
+      background: linear-gradient(#9356dc, #ff79da);
+      font-weight: 600;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
 footer {
@@ -256,56 +247,43 @@ footer {
     gap: 10%;
     flex-direction: row-reverse;
   }
-}
-.footer__title {
-  font-family: $police-title;
-  @media screen and (min-width: 700px) {
-    margin-top: 12px;
-    margin-right: 5%;
+  .footer__title {
+    font-family: $police-title;
+    @media screen and (min-width: 700px) {
+      margin-top: 12px;
+      margin-right: 5%;
   }
 }
-.footer__list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  gap: 7px;
-  @media screen and (min-width: 700px) {
-    gap: 20px;
-    flex-direction: row;
-  }
-  @media screen and (min-width: 990px) {
-    gap: 40px;
-  }
+  .footer__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 7px;
+    @media screen and (min-width: 700px) {
+      gap: 20px;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 990px) {
+      gap: 40px;
+    }
+    .footer__icon {
+      margin-right: 10px;
+    }
+    .footer__contact {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }    
 }
 
-.icon__footer {
-  margin-right: 10px;
-}
+// fin du code index, on passe aux 4 menus
 
-.contact {
-  color: $color-white;
-  text-decoration: none;
-}
-
-.fa-arrow-left {
-  position: absolute;
-  left: 2rem;
-  top: 37%;
-  font-size: 1.2rem;
-  color: #000;
-}
-
-.title__restaurant-bis {
-  display: flex;
-  font-family: "Shrikhand", cursive;
-  font-size: 28px;
-  justify-content: space-between;
-  width: 94%;
-}
-.heart__pos-bis {
-  font-size: 1em;
-  margin: 5px 16px 0 0;
+.picture__food__card-bis {
+  width: 100%;
+  height: 360px;
+  z-index: -1;
+  border-radius: 0;
 }
 
 .container__menu-bis {
@@ -321,12 +299,81 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  .title__restaurant-bis {
+    display: flex;
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+    justify-content: space-between;
+    width: 94%;
+    .heart__pos-bis {
+      font-size: 1em;
+      margin: 5px 16px 0 0;
+    }
+  }
 }
 
 .card-bis {
   @include flex-column-aligned;
   gap: 12px;
   padding: 0 0 40px 0;
+  .style__green__trait-bis {
+    @include green-trait;
+  }
+  .article__style-bis {
+    @include btn-menu-bis;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0%);
+    @media screen and (min-width: 700px) {
+      width: 634px;
+    }
+    .description__flat-bis {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      transition: width 0.5s ease-in-out;
+    }
+    .price-bis {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.4s ease-in-out;
+      right: -87%;
+      top: 0%;
+      margin-right: 15px;
+    }
+  .text__card__exept__price-bis {
+    left: 2%;
+    top: 28%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 85%;}  
+  &:hover {
+    .carre__vert {
+      width: 59px;
+      transform: translateX(-100%);
+    }
+    .price-bis {
+      transform: translateX(-59px);
+    }
+
+    .fa-circle-check {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+
+    .description__flat-bis {
+      width: 80%;
+    }
+  
+  &:not(:hover) {
+    .fa-circle-check {
+      animation: anim-circle 0.8s ease;
+        }
+      }
+    }
+  }
 }
 
 .carre__vert {
@@ -344,88 +391,12 @@ footer {
   transition: all 0.4s ease-out;
   transform-origin: left;
   top: -85.75%;
-}
-
-.fa-circle-check {
-  opacity: 0;
-  transform: rotate(0deg);
-  font-size: larger;
-  transition: all 0.8s ease-out 0.1s;
-  
-}
-
-@keyframes anim-circle {
-  from { scale:1}
-  to {scale: 0}
-}
-
-.btn__style-bis {
-  @include btn-menu-bis;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0%);
-  @media screen and (min-width: 700px) {
-    width: 634px;
+  .fa-circle-check {
+    opacity: 0;
+    transform: rotate(0deg);
+    font-size: larger;
+    transition: all 0.8s ease-out 0.1s;
   }
-  &:hover {
-    .carre__vert {
-      width: 59px;
-      
-      transform: translateX(-100%);
-      
-    }
-    .price-bis {
-      transform: translateX(-59px);
-    }
-  
-    .fa-circle-check {
-      transform: rotate(360deg);
-      opacity: 1;
-    }                  
-      
-    .description__flat-bis {
-      width: 80%;
-      
-      
-      }}
-      &:not(:hover) {
-        .fa-circle-check{
-        
-        animation: anim-circle 0.8s ease;}
-      }
-    }
-  
-
-
-.description__flat-bis {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  transition: width 0.5s ease-in-out;
-}
-
-.style__green__trait-bis {
-  @include green-trait;
-}
-.price-bis {
-  position: relative;
-  display: inline-block;
-  transition: transform 0.5s ease-in-out;
-  right: -87%;
-  top: 0%;
-  margin-right: 15px;
-}
-.name__flat-bis {
-  margin-right: 100%;
-}
-.text__card__exept__price-bis {
-  left: 2%;
-  top: 28%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 85%;
 }
 
 .pos__command__btn-bis {
@@ -449,4 +420,11 @@ footer {
 .desserts-bis {
   -webkit-animation: appearance 0.5s ease 3s forwards;
   animation: appearance 0.5s ease 3s forwards;
+}
+.fa-arrow-left {
+  position: absolute;
+  left: 2rem;
+  top: 37%;
+  font-size: 1.2rem;
+  color: #000;
 }
