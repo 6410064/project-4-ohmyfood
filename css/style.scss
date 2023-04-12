@@ -5,7 +5,6 @@
 /*# sourceMappingURL=style.css.mappourcompiler , copicoll ci dessous
 sass css/style.scss css/style.css*/
 
-
 .background__loader {
   z-index: 99;
   background-color: $color-grey-background;
@@ -92,7 +91,6 @@ strong {
   margin-top: 27px;
 }
 
-
 .title__fonctionnement {
   @include margin-title-h2;
 }
@@ -108,11 +106,15 @@ strong {
       justify-content: center;
       width: 100%;
       @media screen and (min-width: 990px) {
-        gap: 6px;
+        gap: 0;
+        margin-left: 12.5%;
+        width: 75%;
+        justify-content: space-between;
       }
     }
   }
 }
+
 .style_btn {
   @include btn-menu-style;
   width: 90%;
@@ -252,8 +254,8 @@ footer {
     @media screen and (min-width: 700px) {
       margin-top: 12px;
       margin-right: 5%;
+    }
   }
-}
   .footer__list {
     list-style-type: none;
     display: flex;
@@ -274,7 +276,7 @@ footer {
       text-decoration: none;
       color: $color-white;
     }
-  }    
+  }
 }
 
 // fin du code index, on passe aux 4 menus
@@ -341,36 +343,36 @@ footer {
       top: 0%;
       margin-right: 15px;
     }
-  .text__card__exept__price-bis {
-    left: 2%;
-    top: 28%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 85%;}  
-  &:hover {
-    .carre__vert {
-      width: 59px;
-      transform: translateX(-100%);
+    .text__card__exept__price-bis {
+      left: 2%;
+      top: 28%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 85%;
     }
-    .price-bis {
-      transform: translateX(-59px);
-    }
+    &:hover {
+      .carre__vert {
+        width: 59px;
+        transform: translateX(-100%);
+      }
+      .price-bis {
+        transform: translateX(-59px);
+      }
 
-    .fa-circle-check {
-      transform: rotate(360deg);
-      opacity: 1;
-    }
+      .fa-circle-check {
+        transform: rotate(360deg);
+        opacity: 1;
+      }
 
-    .description__flat-bis {
-      width: 80%;
+      .description__flat-bis {
+        width: 80%;
+      }
     }
-  
-  &:not(:hover) {
-    .fa-circle-check {
-      animation: anim-circle 0.8s ease;
-        }
+    &:not(:hover) {
+      .fa-circle-check {
+        animation: anim-circle 0.8s ease;
       }
     }
   }

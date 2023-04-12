@@ -192,7 +192,10 @@ strong {
 }
 @media screen and (min-width: 700px) and (min-width: 990px) {
   .section__fonctionnement .container__btn__menu {
-    gap: 6px;
+    gap: 0;
+    margin-left: 12.5%;
+    width: 75%;
+    justify-content: space-between;
   }
 }
 
@@ -521,7 +524,7 @@ footer .footer__list .footer__contact {
 .card-bis .article__style-bis:hover .description__flat-bis {
   width: 80%;
 }
-.card-bis .article__style-bis:hover:not(:hover) .fa-circle-check {
+.card-bis .article__style-bis:not(:hover) .fa-circle-check {
   animation: anim-circle 0.8s ease;
 }
 
