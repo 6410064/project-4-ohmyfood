@@ -379,7 +379,7 @@ footer .footer__list .footer__contact {
   color: #FFFFFF;
 }
 
-.picture__food__card-bis {
+.header__menu__picture {
   width: 100%;
   height: 360px;
   z-index: -1;
@@ -511,7 +511,7 @@ footer .footer__list .footer__contact {
   transition: all 0.8s ease-out 0.1s;
 }
 
-.pos__command__btn-bis {
+.btn__menu__command {
   margin-top: 28px;
 }
 

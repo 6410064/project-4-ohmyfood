@@ -1,28 +1,28 @@
 .background__loader {
-    z-index: 99;
-    background-color: $color-grey-background;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    animation: background-loader 3s ease forwards;
-  }
-  
-  .loader {
-    border: 10px solid $color-grey-background;
-    border-top: 10px solid $color-purple;
-    border-bottom: 10px solid $color-green-light;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: spin 3s ease-in-out forwards;
-    -webkit-animation: spin ease-in-out 3s forwards;
-    z-index: 100;
-  }
+  z-index: 99;
+  background-color: $color-grey-background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: background-loader 3s ease forwards;
+}
+
+.loader {
+  border: 10px solid $color-grey-background;
+  border-top: 10px solid $color-purple;
+  border-bottom: 10px solid $color-green-light;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spin 3s ease-in-out forwards;
+  -webkit-animation: spin ease-in-out 3s forwards;
+  z-index: 100;
+}

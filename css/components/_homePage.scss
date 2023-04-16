@@ -190,25 +190,30 @@
     display: grid;
     justify-content: space-between;
     padding: 15px;
-    .heart__pos{
+
+    .heart__pos {
         margin-top: 10px;
         grid-area: 1/2;
         font-size: 1.5em;
     }
-.heart1{
-    transition: visibility 0.4s ;
-    &:hover {        
-        visibility: hidden;     
+
+    .heart1 {
+        transition: visibility 0.4s;
+
+        &:hover {
+            visibility: hidden;
+        }
     }
-}
-.heart2 {
+
+    .heart2 {
         opacity: 0;
         background: linear-gradient(#9356dc, #ff79da);
         transition: 0.5s all;
         font-weight: 600;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        &:hover {            
+
+        &:hover {
             opacity: 1;
             scale: 1.1;
         }

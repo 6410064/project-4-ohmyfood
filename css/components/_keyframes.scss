@@ -2,6 +2,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -12,14 +13,17 @@
     transform: rotate(0deg);
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     transform: rotate(360deg);
     opacity: 0;
   }
 }
+
 @keyframes background-loader {
   0% {
     opacity: 1;
@@ -31,35 +35,39 @@
   }
 }
 
-@keyframes heart-animation{
+@keyframes heart-animation {
   0% {
-    
-    background:$color-purple-gradient;
+
+    background: $color-purple-gradient;
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    
+
   }
-  30%{
+
+  30% {
     opacity: 0.3;
     transform: scale(1.03);
   }
-  50%{
+
+  50% {
     transform: scale(1.05);
     opacity: 0.5;
   }
-  60%{
+
+  60% {
     transform: scale(1.06);
     opacity: 0.6;
   }
 
-  80%{
+  80% {
     transform: scale(1.1);
     opacity: 1;
   }
-  100%{
-    background:-webkit-linear-gradient(13deg, rgba(255,121,218,1) 0%, rgba(186,98,219,1) 66%);
+
+  100% {
+    background: -webkit-linear-gradient(13deg, rgba(255, 121, 218, 1) 0%, rgba(186, 98, 219, 1) 66%);
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -67,10 +75,12 @@
     opacity: 1;
   }
 }
+
 @keyframes anim-circle {
   from {
     scale: 1;
   }
+
   to {
     scale: 0;
   }
