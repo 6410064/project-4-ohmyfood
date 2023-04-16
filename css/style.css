@@ -303,21 +303,32 @@
 }
 
 .card__text__with__heart {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   padding: 15px;
 }
 .card__text__with__heart .heart__pos {
   margin-top: 10px;
+  grid-area: 1/2;
   font-size: 1.5em;
 }
-.card__text__with__heart .heart__pos:hover {
-  opacity: 1;
-  animation: heart-animation 0.4s;
+.card__text__with__heart .heart1 {
+  transition: visibility 0.4s;
+}
+.card__text__with__heart .heart1:hover {
+  visibility: hidden;
+}
+.card__text__with__heart .heart2 {
+  opacity: 0;
   background: linear-gradient(#9356dc, #ff79da);
+  transition: 0.5s all;
   font-weight: 600;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.card__text__with__heart .heart2:hover {
+  opacity: 1;
+  scale: 1.1;
 }
 
 footer {

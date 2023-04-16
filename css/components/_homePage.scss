@@ -187,24 +187,32 @@
 }
 
 .card__text__with__heart {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     padding: 15px;
-
-    .heart__pos {
+    .heart__pos{
         margin-top: 10px;
+        grid-area: 1/2;
         font-size: 1.5em;
-
-        &:hover {
+    }
+.heart1{
+    transition: visibility 0.4s ;
+    &:hover {        
+        visibility: hidden;     
+    }
+}
+.heart2 {
+        opacity: 0;
+        background: linear-gradient(#9356dc, #ff79da);
+        transition: 0.5s all;
+        font-weight: 600;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover {            
             opacity: 1;
-            animation: heart-animation 0.4s;
-            background: linear-gradient(#9356dc, #ff79da);
-            font-weight: 600;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            scale: 1.1;
         }
     }
-
 }
 
 footer {
