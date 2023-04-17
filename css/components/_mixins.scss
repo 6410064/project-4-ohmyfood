@@ -8,19 +8,17 @@
 }
 
 @mixin flex-column-aligned {
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 @mixin green-trait {
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid #99e2d0;
     width: 40px;
     margin-right: 88%;
     font-weight: 300;
     padding-bottom: 4px;
-
 }
 
 @mixin margin-title-h2 {
@@ -29,5 +27,4 @@
     @media screen and (min-width: 990px) {
         margin-left: 13%;
     }
-
 }
