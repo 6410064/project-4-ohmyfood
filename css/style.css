@@ -67,10 +67,10 @@
 }
 @keyframes anim-circle {
   from {
-    scale: 1;
+    transform: scale(1);
   }
   to {
-    scale: 0;
+    transform: scale(0);
   }
 }
 .container__title__principal {
@@ -181,6 +181,7 @@
 }
 
 .only__number {
+  display: block;
   color: #FFFFFF;
   background-color: #9356DC;
   border-radius: 50%;
@@ -328,7 +329,7 @@
 }
 .card__text__with__heart .heart2:hover {
   opacity: 1;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 footer {
@@ -424,7 +425,7 @@ footer .footer__list .footer__contact {
   padding: 0 0 40px 0;
 }
 .section__menu .green__trait__style {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 40px;
   margin-right: 88%;
   font-weight: 300;
@@ -572,7 +573,6 @@ footer .footer__list .footer__contact {
   -webkit-animation: spin ease-in-out 3s forwards;
   z-index: 100;
 }
-
 
 body {
   font-family: "Roboto", sans-serif;

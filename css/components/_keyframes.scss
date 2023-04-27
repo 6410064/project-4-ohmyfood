@@ -77,10 +77,10 @@
 
 @keyframes anim-circle {
   from {
-    scale: 1;
+    transform: scale(1);
   }
 
   to {
-    scale: 0;
+    transform: scale(0);
   }
 }

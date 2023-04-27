@@ -35,7 +35,6 @@
     margin-top: 27px;
 }
 
-
 .section__functioning {
     background-color: $color-white;
     padding: 28px 0 68px 0;
@@ -90,6 +89,7 @@
 }
 
 .only__number {
+    display: block;
     color: $color-white;
     background-color: $color-purple;
     border-radius: 50%;
@@ -215,7 +215,7 @@
 
         &:hover {
             opacity: 1;
-            scale: 1.1;
+            transform: scale(1.1);
         }
     }
 }
