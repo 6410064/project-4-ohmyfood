@@ -46,18 +46,40 @@
     @include flex-column-aligned;
     gap: 12px;
     padding: 0 0 40px 0;
+    width: 91%;
+
+    @media screen and (min-width: 700px) {
+        width: auto;
+    }
 
     .green__trait__style {
         @include green-trait;
     }
 
     .article__menu__style {
-        @include btn-menu-bis;
+
+        background-color: $color-white;
+        box-shadow: $shadow-border-1;
+        border-radius: $border-radius-light;
+        width: 100%;
+        height: 68px;
+        border: 0px;
+        cursor: pointer;
         transition: transform 0.5s ease-in-out;
         transform: translateX(0%);
 
+
         @media screen and (min-width: 700px) {
             width: 634px;
+        }
+        
+        .text__title__dish{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            transition: width 0.5s ease-in-out;
+
         }
 
         .text__description__dish {
@@ -78,6 +100,7 @@
         }
 
         .text__card__exept__price {
+            
             left: 2%;
             top: 28%;
             position: relative;
@@ -102,18 +125,20 @@
             }
 
             .text__description__dish {
-                width: 80%;
+                width: 74%;
             }
-        }
+            .text__title__dish{
+                width: 85%;
+            }
 
         &:not(:hover) {
             .fa-circle-check {
                 animation: anim-circle 0.8s ease;
+                }
             }
         }
-    }
+   }
 }
-
 .square__check {
     border-radius: 0 15px 15px 0;
     color: #ffffff;
