@@ -75,7 +75,7 @@
 .btn__functioning {
     @include btn-functioning-style;
     width: 90%;
-    margin-left: 9.5px;
+    margin-left: 11px;
 
     @media screen and (min-width: 700px) {
         width: 30%;
