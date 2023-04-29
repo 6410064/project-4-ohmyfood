@@ -36,11 +36,36 @@
         width: 94%;
 
         .heart__pos-bis {
+            margin-top: 5px;
+            position: absolute;
             font-size: 1em;
-            margin: 5px 16px 0 0;
+            right: 22px;
+            cursor: pointer;
         }
     }
 }
+
+.heart1 {
+    transition: visibility 0.4s;
+
+    &:hover {
+        visibility: hidden;
+    }
+}
+
+.heart2 {
+    opacity: 0;
+    background: linear-gradient(#9356dc, #ff79da);
+    transition: 0.5s all;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+        font-weight: 600;
+        opacity: 1;
+        transform: scale(1.1);
+    }}
 
 .section__menu {
     @include flex-column-aligned;
@@ -66,8 +91,8 @@
         @media screen and (min-width: 700px) {
             width: 634px;
         }
-        
-        .text__title__dish{
+
+        .text__title__dish {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -90,7 +115,7 @@
             right: -87%;
             top: 0%;
             margin-right: 15px;
-        }        
+        }
 
         &:hover {
             .square__check {
@@ -109,18 +134,20 @@
             .text__description__dish {
                 width: 74%;
             }
-            .text__title__dish{
+
+            .text__title__dish {
                 width: 85%;
             }
 
-        &:not(:hover) {
-            .fa-circle-check {
-                animation: anim-circle 0.8s ease;
+            &:not(:hover) {
+                .fa-circle-check {
+                    animation: anim-circle 0.8s ease;
                 }
             }
         }
-   }
+    }
 }
+
 .square__check {
     border-radius: 0 15px 15px 0;
     color: #ffffff;
@@ -141,12 +168,12 @@
     .fa-circle-check {
         opacity: 0;
         transform: rotate(0deg);
-        font-size: larger;
+        font-size: 1.5rem;
         transition: all 0.6s ease-out 0.1s;
     }
 }
 
-.text__card__exept__price {            
+.text__card__exept__price {
     left: 2%;
     top: 28%;
     position: relative;

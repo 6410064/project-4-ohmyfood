@@ -84,7 +84,10 @@
         width: 322.49px;
     }
 }
-
+.fa-store {
+    -webkit-background-clip: text;  
+    color: $color-purple;
+}
 .only__number {
     display: block;
     color: $color-white;

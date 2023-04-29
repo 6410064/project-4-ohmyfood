@@ -151,6 +151,11 @@
   }
 }
 
+.fa-store {
+  -webkit-background-clip: text;
+  color: #9356DC;
+}
+
 .only__number {
   display: block;
   color: #FFFFFF;
@@ -375,8 +380,32 @@ footer .footer__list .footer__contact {
   width: 94%;
 }
 .container__menu .title__menu__restaurant .heart__pos-bis {
+  margin-top: 5px;
+  position: absolute;
   font-size: 1em;
-  margin: 5px 16px 0 0;
+  right: 22px;
+  cursor: pointer;
+}
+
+.heart1 {
+  transition: visibility 0.4s;
+}
+.heart1:hover {
+  visibility: hidden;
+}
+
+.heart2 {
+  opacity: 0;
+  background: linear-gradient(#9356dc, #ff79da);
+  transition: 0.5s all;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart2:hover {
+  font-weight: 600;
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .section__menu {
@@ -470,7 +499,7 @@ footer .footer__list .footer__contact {
 .square__check .fa-circle-check {
   opacity: 0;
   transform: rotate(0deg);
-  font-size: larger;
+  font-size: 1.5rem;
   transition: all 0.6s ease-out 0.1s;
 }
 
