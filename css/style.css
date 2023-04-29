@@ -140,6 +140,9 @@
   border: 0px;
   width: 90%;
   margin-left: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 700px) {
   .btn__functioning {
@@ -153,19 +156,36 @@
   }
 }
 
+.icon__functionning__pos {
+  margin-right: 9%;
+}
+
 .fa-store {
   -webkit-background-clip: text;
   color: #9356DC;
 }
 
+.btn__functioning__text__1 {
+  margin-right: 8px;
+}
+
+.btn__functioning__text__2 {
+  margin-right: 30px;
+}
+
+.btn__functioning__text__3 {
+  margin-right: 23px;
+}
+
 .only__number {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
   background-color: #9356DC;
   border-radius: 50%;
   position: absolute;
-  margin-left: -16px;
-  margin-top: -4px;
+  left: 4%;
   padding: 4px 8px;
 }
 @media screen and (min-width: 700px) {
