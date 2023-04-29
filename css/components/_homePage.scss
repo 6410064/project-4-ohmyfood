@@ -75,10 +75,11 @@
 .btn__functioning {
     @include btn-functioning-style;
     width: 90%;
-    margin-left: 2%;
+    margin-left: 9.5px;
 
     @media screen and (min-width: 700px) {
         width: 30%;
+        margin-left: 0;
     }
 
     @media screen and (min-width: 990px) {
