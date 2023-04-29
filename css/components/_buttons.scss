@@ -1,4 +1,4 @@
-@mixin btn-menu-style {
+@mixin btn-functioning-style {
     background-color: $color-grey-background;
     box-shadow: $shadow-border-1;
     border-radius: $border-radius-light;
@@ -16,11 +16,10 @@
     border: 0px;
     color: $color-white;
     box-shadow: $shadow-border-1;
+    transition: all 0.5s ease;
 
     &:hover {
         opacity: 0.8;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-        transition: all 0.5s ease;
     }
 }
-
