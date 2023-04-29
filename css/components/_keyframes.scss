@@ -1,13 +1,3 @@
-@keyframes appearance {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -35,46 +25,6 @@
   }
 }
 
-@keyframes heart-animation {
-  0% {
-
-    background: $color-purple-gradient;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0.3;
-    transform: scale(1.03);
-  }
-
-  50% {
-    transform: scale(1.05);
-    opacity: 0.5;
-  }
-
-  60% {
-    transform: scale(1.06);
-    opacity: 0.6;
-  }
-
-  80% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  100% {
-    background: -webkit-linear-gradient(13deg, rgba(255, 121, 218, 1) 0%, rgba(186, 98, 219, 1) 66%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.15);
-    opacity: 1;
-  }
-}
-
 @keyframes anim-circle {
   from {
     transform: scale(1);
@@ -82,5 +32,15 @@
 
   to {
     transform: scale(0);
+  }
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

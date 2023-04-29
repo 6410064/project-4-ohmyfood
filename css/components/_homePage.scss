@@ -30,6 +30,7 @@
 .container__header__down {
     padding: 0px 5% 57px 5%;
     @include flex-column-aligned;
+    background-color: $color-grey-bis;
 }
 
 .btn-position1 {
@@ -74,6 +75,7 @@
         }
     }
 }
+
 // section fonctionnement
 .btn__functioning {
     @include btn-menu-style;
@@ -116,6 +118,11 @@
 }
 
 // section restaurants
+.section__restaurants {
+    background-color: $color-grey-background;
+    padding-top: 30px;
+}
+
 .container__article__restaurants {
     @include flex-column-aligned;
     gap: 15px;
@@ -222,6 +229,7 @@
         }
     }
 }
+
 // fin des sections
 footer {
     color: $color-white;

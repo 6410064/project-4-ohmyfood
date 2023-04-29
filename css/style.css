@@ -2,14 +2,6 @@
 /*polices*/
 /*ombres*/
 /*arrondis bordures*/
-@keyframes appearance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -32,45 +24,20 @@
     visibility: hidden;
   }
 }
-@keyframes heart-animation {
-  0% {
-    background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-  }
-  30% {
-    opacity: 0.3;
-    transform: scale(1.03);
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.5;
-  }
-  60% {
-    transform: scale(1.06);
-    opacity: 0.6;
-  }
-  80% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    background: -webkit-linear-gradient(13deg, rgb(255, 121, 218) 0%, rgb(186, 98, 219) 66%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.15);
-    opacity: 1;
-  }
-}
 @keyframes anim-circle {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(0);
+  }
+}
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .container__title__principal {
@@ -106,6 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F6F6F6;
 }
 
 .btn-position1 {
@@ -216,6 +184,11 @@
   .only__number {
     margin-top: -4px;
   }
+}
+
+.section__restaurants {
+  background-color: #F7F7F7;
+  padding-top: 30px;
 }
 
 .container__article__restaurants {
@@ -438,13 +411,6 @@ footer .footer__list .footer__contact {
     width: auto;
   }
 }
-.section__menu .green__trait__style {
-  border-bottom: 3px solid #99e2d0;
-  width: 40px;
-  margin-right: 88%;
-  font-weight: 300;
-  padding-bottom: 4px;
-}
 .section__menu .article__menu__style {
   background-color: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -482,15 +448,6 @@ footer .footer__list .footer__contact {
   right: -87%;
   top: 0%;
   margin-right: 15px;
-}
-.section__menu .article__menu__style .text__card__exept__price {
-  left: 2%;
-  top: 28%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 85%;
 }
 .section__menu .article__menu__style:hover .square__check {
   transform: scaleX(1);
@@ -534,6 +491,24 @@ footer .footer__list .footer__contact {
   transform: rotate(0deg);
   font-size: larger;
   transition: all 0.6s ease-out 0.1s;
+}
+
+.text__card__exept__price {
+  left: 2%;
+  top: 28%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 85%;
+}
+
+.green__trait__style {
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  margin-right: 88%;
+  font-weight: 300;
+  padding-bottom: 4px;
 }
 
 .btn__menu__command {
