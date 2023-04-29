@@ -196,9 +196,22 @@
     left: -1rem;
   }
 }
+
 @media screen and (min-width: 990px) {
-  .only__number {
+  .bullet1 {
     left: -11%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .bullet2 {
+    left: -9%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .bullet3 {
+    left: -10%;
   }
 }
 

@@ -130,12 +130,22 @@
         position: relative;
         left: -1rem;
     }
-
+}
+.bullet1{
     @media screen and (min-width: 990px) {
-        left: -11%;
+        left: -11.5%;
     }
 }
-
+.bullet2{
+    @media screen and (min-width: 990px) {
+        left: -9%;
+    }
+}
+.bullet3{
+    @media screen and (min-width: 990px) {
+        left: -10%;
+    }
+}
 // section restaurants
 .section__restaurants {
     background-color: $color-grey-background;
