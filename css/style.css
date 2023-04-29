@@ -121,6 +121,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    gap: 0;
   }
 }
 @media screen and (min-width: 700px) and (min-width: 990px) {
@@ -146,18 +147,19 @@
 }
 @media screen and (min-width: 700px) {
   .btn__functioning {
-    width: 30%;
-    margin-left: 0;
+    width: 230px;
   }
 }
 @media screen and (min-width: 990px) {
   .btn__functioning {
-    width: 322.49px;
+    width: 30vh;
   }
 }
 
 .icon__functionning__pos {
   margin-right: 9%;
+  gap: 1px;
+  display: flex;
 }
 
 .fa-store {
@@ -190,7 +192,13 @@
 }
 @media screen and (min-width: 700px) {
   .only__number {
-    margin-top: -4px;
+    position: relative;
+    left: -1rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .only__number {
+    left: -11%;
   }
 }
 

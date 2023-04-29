@@ -61,6 +61,7 @@
             flex-direction: row;
             justify-content: center;
             width: 100%;
+            gap:0;
 
             @media screen and (min-width: 990px) {
                 gap: 0;
@@ -81,32 +82,39 @@
     justify-content: center;
 
     @media screen and (min-width: 700px) {
-        width: 30%;
-        margin-left: 0;
+        width: 230px;
+        // margin-left: 0;
     }
 
     @media screen and (min-width: 990px) {
-        width: 322.49px;
+        width : 30vh;
     }
 }
 
 .icon__functionning__pos {
     margin-right: 9%;
+    gap: 1px;
+    display: flex;
 }
+
 
 .fa-store {
     -webkit-background-clip: text;
     color: $color-purple;
 }
+
 .btn__functioning__text__1 {
     margin-right: 8px;
 }
+
 .btn__functioning__text__2 {
     margin-right: 30px;
 }
+
 .btn__functioning__text__3 {
     margin-right: 23px;
 }
+
 .only__number {
     display: flex;
     align-items: center;
@@ -119,7 +127,12 @@
     padding: 4px 8px;
 
     @media screen and (min-width: 700px) {
-        margin-top: -4px;
+        position: relative;
+        left: -1rem;
+    }
+
+    @media screen and (min-width: 990px) {
+        left: -11%;
     }
 }
 
