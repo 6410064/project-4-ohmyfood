@@ -46,7 +46,7 @@
         box-shadow: $shadow-border-1;
     }
 }
-
+// section fonctionnement
 
 .section__functioning {
     background-color: $color-white;
@@ -56,7 +56,7 @@
         @include margin-title-h2;
     }
 
-    .container__btn__menu {
+    .container__btn__functioning {
         width: 100%;
         gap: 25px;
         @include flex-column-aligned;
@@ -76,7 +76,6 @@
     }
 }
 
-// section fonctionnement
 .btn__functioning {
     @include btn-menu-style;
     width: 90%;
@@ -87,18 +86,6 @@
 
     @media screen and (min-width: 990px) {
         width: 322.49px;
-    }
-}
-
-.text__btn__menu {
-    margin-left: 8%;
-
-    @media screen and (min-width: 700px) {
-        margin-left: 0px;
-    }
-
-    @media screen and (min-width: 990px) {
-        margin-left: 25px;
     }
 }
 
